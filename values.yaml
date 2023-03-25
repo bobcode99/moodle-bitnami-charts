@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: ""
+  storageClass: "local-path"
 
 ## @section Common parameters
 
@@ -397,8 +397,8 @@ service:
   ## @param service.ports.https Service HTTPS port
   ##
   ports:
-    http: 8088
-    https: 4433
+    http: 80
+    https: 443
   ## @param service.nodePorts.http Kubernetes HTTP node port
   ## @param service.nodePorts.https Kubernetes HTTPS node port
   ## nodePorts:
