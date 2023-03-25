@@ -392,13 +392,13 @@ podLabels: {}
 service:
   ## @param service.type Service type
   ##
-  type: LoadBalancer
+  type: ClusterIP
   ## @param service.ports.http Service HTTP port
   ## @param service.ports.https Service HTTPS port
   ##
   ports:
-    http: 80
-    https: 443
+    http: 8088
+    https: 4433
   ## @param service.nodePorts.http Kubernetes HTTP node port
   ## @param service.nodePorts.https Kubernetes HTTPS node port
   ## nodePorts:
